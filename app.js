@@ -1,38 +1,9 @@
-// Blue print
-// Factory Functions and Constructor Functions
-// Factory Functions
+// Array includes() - checks if the item is an array
+// useful in the conditional statements
 
-// const john = {
-//   firstName: "John",
-//   lastName: "Anderson",
-//   fullName: function () {
-//     console.log(`My full name is ${this.firstName} ${this.lastName}`);
-//   },
-// };
+const groceries = ["milk", "bread", "meat"];
 
-// const bob = {
-//   firstName: "Bob",
-//   lastName: "Sanders",
-//   fullName: function () {
-//     console.log(`My full name is ${this.firstName} ${this.lastName}`);
-//   },
-// };
+let randomItem = "lemon";
 
-function createPerson(firstName, lastName) {
-  return {
-    firstName: firstName,
-    lastName: lastName,
-    fullName: function () {
-      console.log(
-        `My full name is ${this.firstName} ${this.lastName} and I love JS`
-      );
-    },
-  };
-}
-
-const john = createPerson("John", "Sanders");
-john.fullName();
-const susy = createPerson("Susy", "Apple");
-susy.fullName();
-const bob = createPerson("Bob", "Jordan");
-bob.fullName();
+const isIncluded = groceries.includes(randomItem);
+console.log(isIncluded);
